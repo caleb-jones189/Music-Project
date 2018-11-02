@@ -8,24 +8,23 @@ import javax.sound.sampled.*;
 
 public class Metronome extends JFrame
 {
-	 JPanel panel1=new JPanel();
-	 JPanel panel2=new JPanel();
-	 JPanel panel3=new JPanel();
-	 JPanel panel4=new JPanel();
-	 JPanel panel5=new JPanel();
+	 private JPanel panel1=new JPanel();
+	 private JPanel panel2=new JPanel();
+	 private JPanel panel3=new JPanel();
+	 private JPanel panel4=new JPanel();
+	 private JPanel panel5=new JPanel();
 	 
-	 JLabel label=new JLabel("Select your BPM using box or slider then press start");
-	 JButton back=new JButton("Go Back");//Use this later
-	 JTextField box=new JTextField(10);
-	 JSlider slider=new JSlider(JSlider.HORIZONTAL,60,220,100);
-	 JButton start=new JButton("Start");
-	 JButton stop=new JButton("Stop");
-	 JLabel errorMessage=new JLabel("");
-
+	 private JLabel label=new JLabel("Select your BPM using box or slider then press start");
+	 private JButton back=new JButton("Go Back");//Use this later
+	 private JTextField box=new JTextField(10);
+	 private JSlider slider=new JSlider(JSlider.HORIZONTAL,60,220,100);
+	 private JButton start=new JButton("Start");
+	 private JButton stop=new JButton("Stop");
+	 private JLabel errorMessage=new JLabel("");
 	 
-	 boolean activated=false;
-	 
-	 Timer timer;
+	 private boolean activated=false;
+	
+	 private Timer timer;
 
 	
 	public Metronome()//constructor 
